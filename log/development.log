@@ -1,0 +1,66 @@
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+Couldn't find SolrDocument
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (65.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (51.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (5.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DeviseCreateUsers (20130405002036)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (10.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130405002036')[0m
+  [1m[35m (40.8ms)[0m  commit transaction
+Migrating to AddDeviseGuestsToUsers (20130405002132)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "guest" boolean DEFAULT 'f'
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130405002132')[0m
+  [1m[35m (46.1ms)[0m  commit transaction
+Migrating to CreateSearches (20130405002442)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "searches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "query_params" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_searches_on_user_id" ON "searches" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130405002442')
+  [1m[36m (45.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateBookmarks (20130405002443)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "url" text, "document_id" varchar(255), "title" varchar(255), "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130405002443')
+  [1m[36m (39.0ms)[0m  [1mcommit transaction[0m
+Migrating to RemoveEditableFieldsFromBookmarks (20130405002444)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TEMPORARY TABLE "altered_bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "url" text, "document_id" varchar(255), "title" varchar(255), "notes" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bookmarks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "url" text, "document_id" varchar(255), "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_bookmarks"[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "altered_bookmarks"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "altered_bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "url" text, "document_id" varchar(255), "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "bookmarks"
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "bookmarks"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "document_id" varchar(255), "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_bookmarks"[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "altered_bookmarks"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130405002444')[0m
+  [1m[35m (44.7ms)[0m  commit transaction
+Migrating to AddUserTypesToBookmarksSearches (20130405002445)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "searches" ADD "user_type" varchar(255)
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "bookmarks" ADD "user_type" varchar(255)[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "searches" SET user_type = 'user'
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "bookmarks" SET user_type = 'user'[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130405002445')
+  [1m[36m (37.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
