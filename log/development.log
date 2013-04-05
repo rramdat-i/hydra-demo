@@ -64,3 +64,20 @@ Migrating to AddUserTypesToBookmarksSearches (20130405002445)
   [1m[36m (37.9ms)[0m  [1mcommit transaction[0m
   [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream profile changeme:1/RELS-EXT (10.3ms)
+Loaded datastream profile changeme:1/descMetadata (15.0ms)
+Connecting to database specified by database.yml
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream list for changeme:1 (9.6ms)
+Loaded datastream profile changeme:1/RELS-EXT (16.8ms)
+Loaded datastream content changeme:1/RELS-EXT (14.1ms)
+Loaded datastream profile changeme:1/descMetadata (11.2ms)
+Loaded datastream content changeme:1/descMetadata (24.9ms)
+Loaded datastream profile changeme:1/DC (15.9ms)
