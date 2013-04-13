@@ -3,9 +3,9 @@ class Datastream::SiteMetadata < ActiveFedora::OmDatastream
   set_terminology do |t|
     t.root(path: "fields")
     t.title(index_as: :stored_searchable)
-    t.style(index_as: :stored_searchable)
-    t.culture(index_as: :stored_searchable)
-    t.narrative
+    t.country(index_as: :stored_searchable)
+    t.built_year(index_as: :stored_searchable)
+    t.description
     t.creator
   end
 

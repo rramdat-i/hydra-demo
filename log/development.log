@@ -81,3 +81,1275 @@ Loaded datastream content changeme:1/RELS-EXT (14.1ms)
 Loaded datastream profile changeme:1/descMetadata (11.2ms)
 Loaded datastream content changeme:1/descMetadata (24.9ms)
 Loaded datastream profile changeme:1/DC (15.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 38.108.121.178 at 2013-04-05 19:17:41 +0000
+Served asset /rails.png - 200 OK (1330ms)
+
+
+Started GET "/" for 38.108.121.178 at 2013-04-05 19:19:52 +0000
+Processing by CatalogController#index as HTML
+Solr query: {:qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], "spellcheck.q"=>nil, :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (209.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (1.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home_text.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home.html.erb (5.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (119.1ms)
+Compiled improved-modal/bootstrap-modal.css  (0ms)  (pid 19101)
+Compiled blacklight.css  (7573ms)  (pid 19101)
+Compiled application.css  (7601ms)  (pid 19101)
+Compiled jquery.js  (3ms)  (pid 19101)
+Compiled jquery_ujs.js  (0ms)  (pid 19101)
+Compiled blacklight/core.js  (0ms)  (pid 19101)
+Compiled blacklight/checkbox_submit.js  (0ms)  (pid 19101)
+Compiled blacklight/bookmark_toggle.js  (16ms)  (pid 19101)
+Compiled blacklight/facet_expand_contract.js  (2ms)  (pid 19101)
+Compiled blacklight/lightbox_dialog.js  (2ms)  (pid 19101)
+Compiled blacklight/search_context.js  (2ms)  (pid 19101)
+Compiled blacklight/select_submit.js  (2ms)  (pid 19101)
+Compiled blacklight/zebra_stripe.js  (2ms)  (pid 19101)
+Compiled blacklight/css_dropdowns.js  (0ms)  (pid 19101)
+Compiled bootstrap-transition.js  (0ms)  (pid 19101)
+Compiled bootstrap-collapse.js  (0ms)  (pid 19101)
+Compiled bootstrap-alert.js  (0ms)  (pid 19101)
+Compiled improved-modal/bootstrap-modalmanager.js  (0ms)  (pid 19101)
+Compiled improved-modal/bootstrap-modal.js  (0ms)  (pid 19101)
+Compiled blacklight/blacklight.js  (342ms)  (pid 19101)
+Compiled application.js  (493ms)  (pid 19101)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (3.8ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (859.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (870.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 9911ms (Views: 9475.8ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:20:02 +0000
+Served asset /application.css - 200 OK (104ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:20:02 +0000
+Served asset /blacklight.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:02 +0000
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:02 +0000
+Served asset /jquery.js - 200 OK (17ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/core.js - 200 OK (8ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/checkbox_submit.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/bookmark_toggle.js - 200 OK (8ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/facet_expand_contract.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/zebra_stripe.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/css_dropdowns.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /bootstrap-alert.js - 200 OK (3ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 200 OK (5ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /improved-modal/bootstrap-modal.js - 200 OK (4ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/blacklight.js - 200 OK (33ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /application.js - 200 OK (36ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:03 +0000
+Served asset /blacklight/lightbox_dialog.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Served asset /blacklight/search_context.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Served asset /blacklight/select_submit.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/logo.png" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Served asset /blacklight/logo.png - 200 OK (9ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Served asset /glyphicons-halflings-white.png - 200 OK (9ms)
+
+
+Started GET "/catalog/opensearch.xml" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Processing by CatalogController#opensearch as XML
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/opensearch.xml.builder (6.2ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favicon.ico" for 38.108.121.178 at 2013-04-05 19:20:04 +0000
+Served asset /favicon.ico - 200 OK (8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 38.108.121.178 at 2013-04-05 19:20:23 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (44.8ms)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (177.9ms)[0m  [1mINSERT INTO "searches" ("created_at", "query_params", "updated_at", "user_id", "user_type") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Apr 2013 19:20:23 UTC +00:00], ["query_params", "---\n:utf8: ✓\n:search_field: all_fields\n:q: taj mahal\n:controller: catalog\n:action: index\n"], ["updated_at", Fri, 05 Apr 2013 19:20:23 UTC +00:00], ["user_id", nil], ["user_type", nil]]
+  [1m[35m (70.7ms)[0m  commit transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (1.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (1.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (6.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (2.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (1.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (14.4ms)
+  Rendered collection (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (43.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (448.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (454.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 919ms (Views: 543.5ms | ActiveRecord: 249.9ms)
+
+
+Started GET "/assets/blacklight/remove.gif" for 38.108.121.178 at 2013-04-05 19:20:24 +0000
+Served asset /blacklight/remove.gif - 200 OK (7ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 38.108.121.178 at 2013-04-05 19:23:18 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (13.0ms)
+  [1m[36mSearch Load (0.2ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" IN (1) ORDER BY updated_at desc[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (3.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (6.4ms)
+  Rendered collection (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (21.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (397.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (403.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 503ms (Views: 464.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /application.css - 304 Not Modified (107ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:19 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 38.108.121.178 at 2013-04-05 19:23:20 +0000
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 38.108.121.178 at 2013-04-05 19:23:23 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (18.5ms)
+  [1m[35mSearch Load (0.4ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (1) ORDER BY updated_at desc
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (3.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (6.5ms)
+  Rendered collection (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (21.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (354.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (359.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 449ms (Views: 424.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight.css - 304 Not Modified (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:24 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:25 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:25 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.ico" for 38.108.121.178 at 2013-04-05 19:23:25 +0000
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 38.108.121.178 at 2013-04-05 19:23:26 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (13.5ms)
+  [1m[36mSearch Load (0.4ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" IN (1) ORDER BY updated_at desc[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (3.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (6.2ms)
+  Rendered collection (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (21.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (349.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (354.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 438ms (Views: 419.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /application.css - 304 Not Modified (102ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:27 +0000
+Served asset /application.js - 304 Not Modified (68ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:28 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:23:28 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 38.108.121.178 at 2013-04-05 19:25:25 +0000
+Processing by CatalogController#index as HTML
+Solr query: {:qf=>"title_tesim style_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], "spellcheck.q"=>nil, :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (76.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home_text.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home.html.erb (2.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (6.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (395.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (400.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 538ms (Views: 444.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:26 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:27 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:27 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/logo.png" for 38.108.121.178 at 2013-04-05 19:25:27 +0000
+Served asset /blacklight/logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 38.108.121.178 at 2013-04-05 19:25:27 +0000
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 38.108.121.178 at 2013-04-05 19:25:32 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qf=>"title_tesim style_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (24.0ms)
+  [1m[35mSearch Load (0.2ms)[0m  SELECT "searches".* FROM "searches" WHERE "searches"."id" IN (1) ORDER BY updated_at desc
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (3.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (1.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (80.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (424.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_header.html.erb (789.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_index_default.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document.html.erb (903.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (921.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (1018.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (8.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1204ms (Views: 1151.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (85ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:33 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/remove.gif" for 38.108.121.178 at 2013-04-05 19:25:34 +0000
+Served asset /blacklight/remove.gif - 304 Not Modified (0ms)
+
+
+Started PUT "/catalog/changeme:1" for 38.108.121.178 at 2013-04-05 19:25:36 +0000
+Processing by CatalogController#update as HTML
+  Parameters: {"counter"=>"1", "authenticity_token"=>"hFAg5WOz2PiXYjPYQUR1joN+k/2V9Dq84UIjINWQfy8=", "id"=>"changeme:1"}
+Redirected to http://ec2-107-22-40-37.compute-1.amazonaws.com:3000/catalog/changeme:1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/catalog/changeme:1" for 38.108.121.178 at 2013-04-05 19:25:36 +0000
+Processing by CatalogController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_previous_next_doc.html.erb (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (2.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (358.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (360.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_default.html.erb (1.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (1.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (4.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (6.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/show.html.erb within layouts/blacklight (399.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (6.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 546ms (Views: 518.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:25:37 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&utf8=%E2%9C%93&search_field=all_fields&q=Masoleum" for 38.108.121.178 at 2013-04-05 19:28:07 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"Masoleum"}
+Solr query: {:qf=>"title_tesim style_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"Masoleum", "spellcheck.q"=>"Masoleum", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (19.3ms)
+  [1m[36mSearch Load (0.3ms)[0m  [1mSELECT "searches".* FROM "searches" WHERE "searches"."id" IN (1) ORDER BY updated_at desc[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "searches" ("created_at", "query_params", "updated_at", "user_id", "user_type") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Apr 2013 19:28:07 UTC +00:00], ["query_params", "---\n:utf8: ✓\n:search_field: all_fields\n:q: Masoleum\n:controller: catalog\n:action: index\n"], ["updated_at", Fri, 05 Apr 2013 19:28:07 UTC +00:00], ["user_id", nil], ["user_type", nil]]
+  [1m[35m (76.2ms)[0m  commit transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (0.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (3.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (2.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_header.html.erb (366.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_index_default.html.erb (0.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document.html.erb (381.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (382.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (0.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (403.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (1.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (6.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 561ms (Views: 452.2ms | ActiveRecord: 77.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /application.css - 304 Not Modified (110ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:08 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started PUT "/catalog/changeme:1" for 38.108.121.178 at 2013-04-05 19:28:16 +0000
+Processing by CatalogController#update as HTML
+  Parameters: {"counter"=>"1", "authenticity_token"=>"hFAg5WOz2PiXYjPYQUR1joN+k/2V9Dq84UIjINWQfy8=", "id"=>"changeme:1"}
+Redirected to http://ec2-107-22-40-37.compute-1.amazonaws.com:3000/catalog/changeme:1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/catalog/changeme:1" for 38.108.121.178 at 2013-04-05 19:28:16 +0000
+Processing by CatalogController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_previous_next_doc.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_nyzusjylw5esngqc2hxy_1365189601_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (354.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (356.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_default.html.erb (0.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (1.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (4.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (5.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/show.html.erb within layouts/blacklight (379.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (8.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 530ms (Views: 430.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight.css - 304 Not Modified (96ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/core.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 38.108.121.178 at 2013-04-05 19:28:17 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 208.54.45.183 at 2013-04-13 16:00:06 +0000
+Processing by CatalogController#index as HTML
+Solr query: {:qf=>"title_tesim style_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], "spellcheck.q"=>nil, :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (441.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home_text.html.erb (0.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home.html.erb (5.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (40.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.9ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_sdgxropgt9kwl9jbkyzc_1365868808_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (815.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (823.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 2128ms (Views: 1480.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /application.css - 200 OK (29ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight.css - 200 OK (85ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/core.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/checkbox_submit.js - 200 OK (68ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/bookmark_toggle.js - 200 OK (8ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/facet_expand_contract.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/lightbox_dialog.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/search_context.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:10 +0000
+Served asset /blacklight/select_submit.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /blacklight/zebra_stripe.js - 200 OK (9ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /blacklight/css_dropdowns.js - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /bootstrap-collapse.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /bootstrap-alert.js - 200 OK (3ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 200 OK (5ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /improved-modal/bootstrap-modal.js - 200 OK (6ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /blacklight/blacklight.js - 200 OK (34ms)
+
+
+Started GET "/assets/application.js?body=1" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /application.js - 200 OK (106ms)
+
+
+Started GET "/assets/blacklight/logo.png" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /blacklight/logo.png - 200 OK (21ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /glyphicons-halflings-white.png - 200 OK (5ms)
+
+
+Started GET "/assets/favicon.ico" for 208.54.45.183 at 2013-04-13 16:00:11 +0000
+Served asset /favicon.ico - 200 OK (6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_field=all_fields&q=taj+mahal" for 208.54.45.183 at 2013-04-13 16:00:22 +0000
+Processing by CatalogController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_field"=>"all_fields", "q"=>"taj mahal"}
+Solr query: {:qf=>"title_tesim style_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], :q=>"taj mahal", "spellcheck.q"=>"taj mahal", :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (49.8ms)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (75.8ms)[0m  [1mINSERT INTO "searches" ("created_at", "query_params", "updated_at", "user_id", "user_type") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 13 Apr 2013 16:00:22 UTC +00:00], ["query_params", "---\n:utf8: ✓\n:search_field: all_fields\n:q: taj mahal\n:controller: catalog\n:action: index\n"], ["updated_at", Sat, 13 Apr 2013 16:00:22 UTC +00:00], ["user_id", nil], ["user_type", nil]]
+  [1m[35m (51.4ms)[0m  commit transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_opensearch_response_metadata.html.erb (1.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_did_you_mean.html.erb (0.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints_element.html.erb (1.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_constraints.html.erb (6.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_paginate_compact.html.erb (1.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_widget.html.erb (0.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_per_page_widget.html.erb (0.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_sort_and_per_page.html.erb (10.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_sdgxropgt9kwl9jbkyzc_1365868808_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_sdgxropgt9kwl9jbkyzc_1365868808_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (361.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_header.html.erb (799.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_index_default.html.erb (1.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document.html.erb (900.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_document_list.html.erb (903.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_results_pagination.html.erb (1.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (981.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (7.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1404ms (Views: 1113.4ms | ActiveRecord: 128.7ms)
+
+
+Started GET "/assets/blacklight/remove.gif" for 208.54.45.183 at 2013-04-13 16:00:24 +0000
+Served asset /blacklight/remove.gif - 200 OK (22ms)
+
+
+Started PUT "/catalog/changeme:1" for 208.54.45.183 at 2013-04-13 16:00:26 +0000
+Processing by CatalogController#update as HTML
+  Parameters: {"counter"=>"1", "authenticity_token"=>"UIuxTISnKGlOqhTRQ1EWnaK+31lvWE5IVGuwmF6Xs9I=", "id"=>"changeme:1"}
+Redirected to http://ec2-107-22-40-37.compute-1.amazonaws.com:3000/catalog/changeme:1
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/catalog/changeme:1" for 208.54.45.183 at 2013-04-13 16:00:26 +0000
+Processing by CatalogController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_previous_next_doc.html.erb (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_sdgxropgt9kwl9jbkyzc_1365868808_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_sdgxropgt9kwl9jbkyzc_1365868808_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (2.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (358.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (363.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_default.html.erb (1.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_bookmark_control.html.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_tools.html.erb (4.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_show_sidebar.html.erb (6.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/show.html.erb within layouts/blacklight (435.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (7.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 612ms (Views: 572.2ms | ActiveRecord: 0.6ms)
