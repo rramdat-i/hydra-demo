@@ -3526,3 +3526,260 @@ Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 208.54.45.247 at 2013-04-14 01:50:53 +0000
 Served asset /application.js - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 208.54.45.247 at 2013-04-14 02:32:46 +0000
+Processing by CatalogController#index as HTML
+Completed 500 Internal Server Error in 403ms
+
+Errno::ECONNREFUSED (Connection refused - {:params=>{:wt=>:ruby, :qf=>"title_tesim country_tesim caption_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], "spellcheck.q"=>nil, :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}, :method=>:get, :query=>"wt=ruby&qf=title_tesim+country_tesim+caption_tesim&qt=search&rows=10&facet.field=object_type_sim&facet.field=pub_date_sim&facet.field=subject_topic_sim&facet.field=language_sim&facet.field=lc1_letter_sim&facet.field=subject_geo_sim&facet.field=subject_era_sim&f.subject_topic_sim.facet.limit=21&sort=score+desc%2C+pub_date_dtsi+desc%2C+title_tesi+asc&fq=-has_model_ssim%3A%22info%3Afedora%2Fafmodel%3AFileAsset%22", :path=>"select", :uri=>#<URI::HTTP:0x00000002f15f70 URL:http://localhost:8983/solr/development/select?wt=ruby&qf=title_tesim+country_tesim+caption_tesim&qt=search&rows=10&facet.field=object_type_sim&facet.field=pub_date_sim&facet.field=subject_topic_sim&facet.field=language_sim&facet.field=lc1_letter_sim&facet.field=subject_geo_sim&facet.field=subject_era_sim&f.subject_topic_sim.facet.limit=21&sort=score+desc%2C+pub_date_dtsi+desc%2C+title_tesi+asc&fq=-has_model_ssim%3A%22info%3Afedora%2Fafmodel%3AFileAsset%22>, :open_timeout=>nil, :read_timeout=>nil, :retry_503=>nil, :retry_after_limit=>nil}):
+  rsolr (1.0.9) lib/rsolr/connection.rb:19:in `rescue in execute'
+  rsolr (1.0.9) lib/rsolr/connection.rb:14:in `execute'
+  rsolr (1.0.9) lib/rsolr/client.rb:167:in `execute'
+  rsolr (1.0.9) lib/rsolr/client.rb:161:in `send_and_receive'
+  blacklight (4.2.0) lib/blacklight/solr_helper.rb:390:in `query_solr'
+  blacklight (4.2.0) lib/blacklight/solr_helper.rb:372:in `get_search_results'
+  blacklight (4.2.0) lib/blacklight/catalog.rb:38:in `index'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:458:in `_run__908557743431609734__process_action__4578083338194626008__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3638957157323824745__call__3751403286622413110__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/bitnami/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /opt/bitnami/ruby/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /opt/bitnami/ruby/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (140.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 208.54.45.247 at 2013-04-14 02:37:25 +0000
+Processing by CatalogController#index as HTML
+Solr query: {:qf=>"title_tesim country_tesim caption_tesim", :qt=>"search", :rows=>10, :"facet.field"=>["object_type_sim", "pub_date_sim", "subject_topic_sim", "language_sim", "lc1_letter_sim", "subject_geo_sim", "subject_era_sim"], "spellcheck.q"=>nil, :"f.subject_topic_sim.facet.limit"=>21, :sort=>"score desc, pub_date_dtsi desc, title_tesi asc", :fq=>["-has_model_ssim:\"info:fedora/afmodel:FileAsset\""]}
+Solr fetch: CatalogController#query_solr (1355.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (1.2ms)
+  Rendered catalog/_home_text.html.erb (1.6ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_facets.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_home.html.erb (5.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/index.html.erb within layouts/blacklight (142.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (3.7ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1541.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (1552.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 3735ms (Views: 2302.8ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /application.css - 200 OK (118ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight.css - 200 OK (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /jquery_ujs.js - 200 OK (66ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/sites.css?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /sites.css - 200 OK (3ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/core.js - 200 OK (5ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/checkbox_submit.js - 200 OK (5ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/bookmark_toggle.js - 200 OK (9ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/lightbox_dialog.js - 200 OK (7ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/search_context.js - 200 OK (7ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:31 +0000
+Served asset /blacklight/facet_expand_contract.js - 200 OK (8ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /blacklight/select_submit.js - 200 OK (7ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /blacklight/zebra_stripe.js - 200 OK (7ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /blacklight/css_dropdowns.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /bootstrap-transition.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /bootstrap-collapse.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /bootstrap-alert.js - 200 OK (4ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 200 OK (6ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /improved-modal/bootstrap-modal.js - 200 OK (5ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:32 +0000
+Served asset /blacklight/blacklight.js - 200 OK (35ms)
+
+
+Started GET "/assets/sites.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Served asset /sites.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Served asset /application.js - 200 OK (46ms)
+
+
+Started GET "/assets/blacklight/logo.png" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Served asset /blacklight/logo.png - 200 OK (18ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Served asset /glyphicons-halflings-white.png - 200 OK (6ms)
+
+
+Started GET "/catalog/opensearch.xml" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Processing by CatalogController#opensearch as XML
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/opensearch.xml.builder (130.8ms)
+Completed 200 OK in 138ms (Views: 137.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favicon.ico" for 208.54.45.247 at 2013-04-14 02:37:33 +0000
+Served asset /favicon.ico - 200 OK (7ms)
+
+
+Started GET "/sites" for 208.54.45.247 at 2013-04-14 02:37:37 +0000
+Processing by SitesController#index as HTML
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream list for changeme:1 (11.4ms)
+Loaded datastream profile changeme:1/RELS-EXT (13.5ms)
+Loaded datastream content changeme:1/RELS-EXT (29.9ms)
+Loaded datastream list for changeme:2 (152.2ms)
+Loaded datastream profile changeme:2/RELS-EXT (13.0ms)
+Loaded datastream content changeme:2/RELS-EXT (10.9ms)
+Loaded datastream profile changeme:1/descMetadata (12.7ms)
+Loaded datastream content changeme:1/descMetadata (33.2ms)
+  Rendered sites/index.html.erb within layouts/blacklight (199.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (852.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (858.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 3231ms (Views: 1512.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sites.json" for 208.54.45.247 at 2013-04-14 02:37:57 +0000
+Processing by SitesController#index as JSON
+Loaded datastream list for changeme:1 (13.3ms)
+Loaded datastream profile changeme:1/RELS-EXT (261.0ms)
+Loaded datastream content changeme:1/RELS-EXT (16.4ms)
+Loaded datastream list for changeme:2 (15.4ms)
+Loaded datastream profile changeme:2/RELS-EXT (14.0ms)
+Loaded datastream content changeme:2/RELS-EXT (12.1ms)
