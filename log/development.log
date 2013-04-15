@@ -3783,3 +3783,1659 @@ Loaded datastream content changeme:1/RELS-EXT (16.4ms)
 Loaded datastream list for changeme:2 (15.4ms)
 Loaded datastream profile changeme:2/RELS-EXT (14.0ms)
 Loaded datastream content changeme:2/RELS-EXT (12.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 03:13:40 +0000
+Processing by SitesController#index as HTML
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream list for changeme:1 (12.2ms)
+Loaded datastream profile changeme:1/RELS-EXT (35.9ms)
+Loaded datastream content changeme:1/RELS-EXT (15.4ms)
+Loaded datastream list for changeme:2 (12.6ms)
+Loaded datastream profile changeme:2/RELS-EXT (15.2ms)
+Loaded datastream content changeme:2/RELS-EXT (189.6ms)
+Loaded datastream profile changeme:1/descMetadata (21.5ms)
+Loaded datastream content changeme:1/descMetadata (17.8ms)
+  Rendered sites/index.html.erb within layouts/blacklight (312.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (561.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1768.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (2349.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 5476ms (Views: 3878.0ms | ActiveRecord: 124.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /application.css - 304 Not Modified (202ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /sites.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /scaffolds.css - 304 Not Modified (93ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /blacklight.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:55 +0000
+Served asset /blacklight/core.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (108ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /sites.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 03:13:56 +0000
+Served asset /application.js - 304 Not Modified (231ms)
+
+
+Started GET "/assets/blacklight/logo.png" for 184.88.238.98 at 2013-04-15 03:13:57 +0000
+Served asset /blacklight/logo.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 184.88.238.98 at 2013-04-15 03:13:57 +0000
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (32ms)
+
+
+Started GET "/sites/new" for 184.88.238.98 at 2013-04-15 03:14:03 +0000
+Processing by SitesController#new as HTML
+  Rendered sites/_form.html.erb (5.9ms)
+  Rendered sites/new.html.erb within layouts/blacklight (9.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (853.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (859.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1329ms (Views: 1249.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight.css - 304 Not Modified (156ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /application.css - 304 Not Modified (86ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:05 +0000
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 03:14:08 +0000
+Processing by SitesController#index as HTML
+Loaded datastream list for changeme:1 (76.0ms)
+Loaded datastream profile changeme:1/RELS-EXT (278.1ms)
+Loaded datastream content changeme:1/RELS-EXT (74.3ms)
+Loaded datastream list for changeme:2 (13.5ms)
+Loaded datastream profile changeme:2/RELS-EXT (12.7ms)
+Loaded datastream content changeme:2/RELS-EXT (74.8ms)
+Loaded datastream profile changeme:1/descMetadata (17.1ms)
+Loaded datastream content changeme:1/descMetadata (81.4ms)
+  Rendered sites/index.html.erb within layouts/blacklight (133.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (846.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (853.3ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 2058ms (Views: 1451.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight.css - 304 Not Modified (142ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 03:14:11 +0000
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started DELETE "/sites/changeme:2" for 184.88.238.98 at 2013-04-15 03:14:16 +0000
+Processing by SitesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3nHQCIbZsnN3eihdjua1vqKp4T43YsQMlkz/KojenX0=", "id"=>"changeme:2"}
+Loaded datastream list for changeme:2 (15.9ms)
+Loaded datastream profile changeme:2/RELS-EXT (16.1ms)
+Loaded datastream content changeme:2/RELS-EXT (13.9ms)
+Completed 500 Internal Server Error in 247ms
+
+SyntaxError (/home/bitnami/hydra/hydra-demo/app/models/image.rb:5: syntax error, unexpected ':', expecting keyword_end
+  belongs_to: :site, :property=> :is_part_of
+             ^):
+  app/controllers/sites_controller.rb:76:in `destroy'
+
+
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sites/" for 184.88.238.98 at 2013-04-15 04:04:04 +0000
+Processing by SitesController#index as HTML
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream list for changeme:1 (10.3ms)
+Loaded datastream profile changeme:1/RELS-EXT (10.5ms)
+Loaded datastream content changeme:1/RELS-EXT (11.3ms)
+Loaded datastream list for changeme:2 (16.5ms)
+Loaded datastream profile changeme:2/RELS-EXT (73.2ms)
+Loaded datastream content changeme:2/RELS-EXT (9.4ms)
+Loaded datastream profile changeme:1/descMetadata (71.3ms)
+Loaded datastream content changeme:1/descMetadata (18.0ms)
+  Rendered sites/index.html.erb within layouts/blacklight (365.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (595.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1710.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (2311.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 4800ms (Views: 3515.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:18 +0000
+Served asset /application.css - 304 Not Modified (233ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /sites.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/core.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (132ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /application.js - 304 Not Modified (106ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /sites.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:19 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (33ms)
+
+
+Started DELETE "/sites/changeme:2" for 184.88.238.98 at 2013-04-15 04:04:26 +0000
+Processing by SitesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3nHQCIbZsnN3eihdjua1vqKp4T43YsQMlkz/KojenX0=", "id"=>"changeme:2"}
+Loaded datastream list for changeme:2 (8.9ms)
+Loaded datastream profile changeme:2/RELS-EXT (70.6ms)
+Loaded datastream content changeme:2/RELS-EXT (9.9ms)
+Redirected to http://ec2-50-16-163-100.compute-1.amazonaws.com:3000/sites
+Completed 302 Found in 1047ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 04:04:28 +0000
+Processing by SitesController#index as HTML
+Loaded datastream list for changeme:1 (15.4ms)
+Loaded datastream profile changeme:1/RELS-EXT (20.0ms)
+Loaded datastream content changeme:1/RELS-EXT (192.3ms)
+Loaded datastream profile changeme:1/descMetadata (10.0ms)
+Loaded datastream content changeme:1/descMetadata (11.9ms)
+  Rendered sites/index.html.erb within layouts/blacklight (26.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (847.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (853.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1568ms (Views: 1241.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight.css - 304 Not Modified (217ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:04:30 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 04:19:54 +0000
+Processing by SitesController#index as HTML
+ActiveFedora: loading fedora config from /home/bitnami/hydra/hydra-demo/config/fedora.yml
+ActiveFedora: loading solr config from /home/bitnami/hydra/hydra-demo/config/solr.yml
+Loaded datastream list for changeme:1 (71.4ms)
+Loaded datastream profile changeme:1/RELS-EXT (17.6ms)
+Loaded datastream content changeme:1/RELS-EXT (13.2ms)
+Loaded datastream profile changeme:1/descMetadata (73.7ms)
+Loaded datastream content changeme:1/descMetadata (17.6ms)
+  Rendered sites/index.html.erb within layouts/blacklight (367.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (606.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (1774.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (2386.8ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (1.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 4913ms (Views: 3712.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:08 +0000
+Served asset /application.css - 304 Not Modified (162ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /sites.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/core.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (212ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /sites.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:09 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (101ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:10 +0000
+Served asset /application.js - 304 Not Modified (234ms)
+
+
+Started GET "/sites/changeme:1/edit" for 184.88.238.98 at 2013-04-15 04:20:15 +0000
+Processing by SitesController#edit as HTML
+  Parameters: {"id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (11.4ms)
+Loaded datastream profile changeme:1/RELS-EXT (190.1ms)
+Loaded datastream content changeme:1/RELS-EXT (22.3ms)
+Loaded datastream profile changeme:1/descMetadata (70.3ms)
+Loaded datastream content changeme:1/descMetadata (24.7ms)
+  Rendered sites/_form.html.erb (112.0ms)
+  Rendered sites/edit.html.erb within layouts/blacklight (115.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (876.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (883.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1614ms (Views: 1362.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /blacklight.css - 304 Not Modified (139ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:17 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:20:18 +0000
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started PUT "/sites/changeme:1" for 184.88.238.98 at 2013-04-15 04:22:31 +0000
+Processing by SitesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3nHQCIbZsnN3eihdjua1vqKp4T43YsQMlkz/KojenX0=", "site"=>{"title"=>"[\"Taj Mahal\"]", "country"=>"[\"India\"]", "built_year"=>"[\"1653\"]", "description"=>"[\"UNESCO World Heritage Site\"]", "creator"=>"[\"Ustad Ahmad Lahauri\"]"}, "commit"=>"Update Site", "id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (24.9ms)
+Loaded datastream profile changeme:1/RELS-EXT (25.6ms)
+Loaded datastream content changeme:1/RELS-EXT (192.4ms)
+Loaded datastream profile changeme:1/descMetadata (18.8ms)
+Loaded datastream content changeme:1/descMetadata (21.7ms)
+Loaded datastream profile changeme:1/DC (10.9ms)
+Loaded datastream content changeme:1/DC (10.3ms)
+Loaded datastream profile changeme:1/descMetadata (9.3ms)
+Redirected to http://ec2-50-16-163-100.compute-1.amazonaws.com:3000/sites/changeme:1
+Completed 302 Found in 4447ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sites/changeme:1" for 184.88.238.98 at 2013-04-15 04:22:36 +0000
+Processing by SitesController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (23.1ms)
+Loaded datastream profile changeme:1/RELS-EXT (14.8ms)
+Loaded datastream content changeme:1/RELS-EXT (121.4ms)
+Loaded datastream profile changeme:1/descMetadata (24.1ms)
+Loaded datastream content changeme:1/descMetadata (17.3ms)
+  Rendered sites/show.html.erb within layouts/blacklight (46.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (906.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (913.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1680ms (Views: 1502.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:38 +0000
+Served asset /application.css - 304 Not Modified (148ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /sites.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:39 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 04:22:44 +0000
+Processing by SitesController#index as HTML
+Loaded datastream list for changeme:1 (174.2ms)
+Loaded datastream profile changeme:1/RELS-EXT (10.3ms)
+Loaded datastream content changeme:1/RELS-EXT (100.8ms)
+Loaded datastream profile changeme:1/descMetadata (9.2ms)
+Loaded datastream content changeme:1/descMetadata (9.4ms)
+  Rendered sites/index.html.erb within layouts/blacklight (23.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (848.0ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (854.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1575ms (Views: 1247.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /jquery.js - 304 Not Modified (103ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /application.css - 304 Not Modified (180ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight/core.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:46 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:47 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/sites/changeme:1/edit" for 184.88.238.98 at 2013-04-15 04:22:52 +0000
+Processing by SitesController#edit as HTML
+  Parameters: {"id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (12.1ms)
+Loaded datastream profile changeme:1/RELS-EXT (10.0ms)
+Loaded datastream content changeme:1/RELS-EXT (8.4ms)
+Loaded datastream profile changeme:1/descMetadata (83.3ms)
+Loaded datastream content changeme:1/descMetadata (24.3ms)
+  Rendered sites/_form.html.erb (192.6ms)
+  Rendered sites/edit.html.erb within layouts/blacklight (194.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (847.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (914.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1554ms (Views: 1412.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /application.css - 304 Not Modified (226ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:54 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (140ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:22:55 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started PUT "/sites/changeme:1" for 184.88.238.98 at 2013-04-15 04:23:23 +0000
+Processing by SitesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3nHQCIbZsnN3eihdjua1vqKp4T43YsQMlkz/KojenX0=", "site"=>{"title"=>"Taj Mahal", "country"=>"India", "built_year"=>"1653", "description"=>"UNESCO World Heritage Site", "creator"=>"Ustad Ahmad Lahauri"}, "commit"=>"Update Site", "id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (8.7ms)
+Loaded datastream profile changeme:1/RELS-EXT (8.6ms)
+Loaded datastream content changeme:1/RELS-EXT (8.2ms)
+Loaded datastream profile changeme:1/descMetadata (8.8ms)
+Loaded datastream content changeme:1/descMetadata (17.1ms)
+Loaded datastream profile changeme:1/DC (127.1ms)
+Loaded datastream content changeme:1/DC (18.4ms)
+Loaded datastream profile changeme:1/descMetadata (9.1ms)
+Redirected to http://ec2-50-16-163-100.compute-1.amazonaws.com:3000/sites/changeme:1
+Completed 302 Found in 771ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/sites/changeme:1" for 184.88.238.98 at 2013-04-15 04:23:24 +0000
+Processing by SitesController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (8.3ms)
+Loaded datastream profile changeme:1/RELS-EXT (12.6ms)
+Loaded datastream content changeme:1/RELS-EXT (11.4ms)
+Loaded datastream profile changeme:1/descMetadata (8.9ms)
+Loaded datastream content changeme:1/descMetadata (8.9ms)
+  Rendered sites/show.html.erb within layouts/blacklight (21.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (848.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (854.7ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1507ms (Views: 1454.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /blacklight.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /scaffolds.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:26 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:27 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 04:23:30 +0000
+Processing by SitesController#index as HTML
+Loaded datastream list for changeme:1 (8.5ms)
+Loaded datastream profile changeme:1/RELS-EXT (8.4ms)
+Loaded datastream content changeme:1/RELS-EXT (7.9ms)
+Loaded datastream profile changeme:1/descMetadata (8.8ms)
+Loaded datastream content changeme:1/descMetadata (98.6ms)
+  Rendered sites/index.html.erb within layouts/blacklight (112.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (848.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (945.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1377ms (Views: 1329.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /application.css - 304 Not Modified (152ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /blacklight.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:31 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/core.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:23:32 +0000
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/sites/changeme:1" for 184.88.238.98 at 2013-04-15 04:24:31 +0000
+Processing by SitesController#show as HTML
+  Parameters: {"id"=>"changeme:1"}
+Loaded datastream list for changeme:1 (8.5ms)
+Loaded datastream profile changeme:1/RELS-EXT (8.9ms)
+Loaded datastream content changeme:1/RELS-EXT (167.3ms)
+Loaded datastream profile changeme:1/descMetadata (10.0ms)
+Loaded datastream content changeme:1/descMetadata (13.8ms)
+  Rendered sites/show.html.erb within layouts/blacklight (27.2ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (876.9ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (883.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1542ms (Views: 1244.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/core.js - 304 Not Modified (163ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:33 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:34 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:34 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:34 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:34 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:34 +0000
+Served asset /application.js - 304 Not Modified (66ms)
+
+
+Started GET "/sites" for 184.88.238.98 at 2013-04-15 04:24:37 +0000
+Processing by SitesController#index as HTML
+Loaded datastream list for changeme:1 (16.0ms)
+Loaded datastream profile changeme:1/RELS-EXT (17.0ms)
+Loaded datastream content changeme:1/RELS-EXT (133.1ms)
+Loaded datastream profile changeme:1/descMetadata (22.0ms)
+Loaded datastream content changeme:1/descMetadata (16.4ms)
+  Rendered sites/index.html.erb within layouts/blacklight (134.4ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/catalog/_search_form.html.erb (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'guest_h4rnkwaidhwb1k5wxef5_1365907048_1@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_user_util_links.html.erb (848.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_header_navbar.html.erb (854.5ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/_flash_msg.html.erb (0.1ms)
+  Rendered /opt/bitnami/ruby/lib/ruby/gems/1.9.1/gems/blacklight-4.2.0/app/views/shared/_footer.html.erb (0.0ms)
+Completed 200 OK in 1573ms (Views: 1383.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /application.css - 304 Not Modified (196ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sites.css?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /sites.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/core.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/core.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/blacklight/bookmark_toggle.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/bookmark_toggle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/checkbox_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/checkbox_submit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/lightbox_dialog.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/lightbox_dialog.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/search_context.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/search_context.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/facet_expand_contract.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/facet_expand_contract.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/select_submit.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/select_submit.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/zebra_stripe.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/zebra_stripe.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blacklight/css_dropdowns.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/css_dropdowns.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modalmanager.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /improved-modal/bootstrap-modalmanager.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/improved-modal/bootstrap-modal.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /improved-modal/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blacklight/blacklight.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /blacklight/blacklight.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sites.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /sites.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 184.88.238.98 at 2013-04-15 04:24:39 +0000
+Served asset /application.js - 304 Not Modified (5ms)
