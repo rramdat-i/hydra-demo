@@ -1,4 +1,7 @@
 HydraDemo::Application.routes.draw do
+  resources :images
+
+
   resources :sites
 
 
